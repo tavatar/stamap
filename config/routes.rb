@@ -54,6 +54,6 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-
   match ':login/:index', to: 'login#index', via: [:get, :post]
+  match ':login/:tomain', to: 'login#tomain', via: [:get, :post]
 end
