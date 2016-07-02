@@ -27,4 +27,8 @@
       </tr>
     </table>
   </form>
+  <% @test.each do |test| %>
+  <%= test.userid %><br>
+  <%= test.password %><br>
+  <% end %>
 </div>

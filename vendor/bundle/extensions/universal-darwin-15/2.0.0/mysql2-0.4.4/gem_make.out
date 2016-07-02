@@ -1,0 +1,62 @@
+current directory: /Users/tavatar/Documents/rails/stamap/vendor/bundle/gems/mysql2-0.4.4/ext/mysql2
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin/ruby -r ./siteconf20160620-13254-17fnbiq.rb extconf.rb
+checking for ruby/thread.h... yes
+checking for rb_thread_call_without_gvl() in ruby/thread.h... yes
+checking for rb_thread_blocking_region()... yes
+checking for rb_wait_for_single_fd()... yes
+checking for rb_hash_dup()... yes
+checking for rb_intern3()... yes
+-----
+Using mysql_config at /usr/local/mysql/bin/mysql_config
+-----
+checking for mysql.h... yes
+checking for errmsg.h... yes
+checking for mysqld_error.h... yes
+-----
+Setting rpath to /usr/local/mysql/lib
+-----
+creating Makefile
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /Users/tavatar/Documents/rails/stamap/vendor/bundle/extensions/universal-darwin-15/2.0.0/mysql2-0.4.4/mkmf.log
+
+current directory: /Users/tavatar/Documents/rails/stamap/vendor/bundle/gems/mysql2-0.4.4/ext/mysql2
+make "DESTDIR=" clean
+
+current directory: /Users/tavatar/Documents/rails/stamap/vendor/bundle/gems/mysql2-0.4.4/ext/mysql2
+make "DESTDIR="
+compiling client.c
+client.c:132:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+client.c:552:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+2 warnings generated.
+client.c:132:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+client.c:552:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+2 warnings generated.
+compiling infile.c
+compiling mysql2_ext.c
+compiling result.c
+compiling statement.c
+statement.c:70:1: warning: function declared 'noreturn' should not return [-Winvalid-noreturn]
+}
+^
+1 warning generated.
+statement.c:70:1: warning: function declared 'noreturn' should not return [-Winvalid-noreturn]
+}
+^
+1 warning generated.
+linking shared-object mysql2/mysql2.bundle
+ld: warning: ignoring file /usr/local/mysql/lib/libmysqlclient.dylib, file was built for x86_64 which is not the architecture being linked (i386): /usr/local/mysql/lib/libmysqlclient.dylib
+
+current directory: /Users/tavatar/Documents/rails/stamap/vendor/bundle/gems/mysql2-0.4.4/ext/mysql2
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 mysql2.bundle ./.gem.20160620-13254-89deap/mysql2
+installing default mysql2 libraries
