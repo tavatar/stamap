@@ -2,14 +2,14 @@
   <%=@msg%>
 </div>
 <div>
-  <form　method="post" action="http://localhost:3000/login/tomain">
+  <form action="http://localhost:3000/login/tomain" method="get">
     <table>
       <tr>
         <td>
         <p>ユーザー名</p>
         </td>
         <td>
-        <input type='text' value=''/>
+        <input id="id" name="id" type="text" value=""/>
         </td>
       </tr>
       <tr>
@@ -17,18 +17,14 @@
           <p>パスワード</p>
         </td>
         <td>
-        <input type='text' value=''/>
+        <input id="pass" name="pass" type="text" value=""/>
         </td>
       </tr>
       <tr>
         <td>
-        <button type='submit' value='send'>ログイン</button>
+        <button type="submit" value="send">ログイン</button>
         </td>
       </tr>
     </table>
   </form>
-  <% @test.each do |test| %>
-  <%= test.userid %><br>
-  <%= test.password %><br>
-  <% end %>
 </div>
