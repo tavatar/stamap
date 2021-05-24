@@ -7,7 +7,7 @@ class LoginController < ApplicationController
     user = Loginuser.first
 
     if user = Loginuser.find_by(userid: params[:id]) then
-        @msg = "メイン画面ですよ"
+        @msg = "メイン画面ですよ！"
 	    render template: "main/index"
 	else
         @msg = "ユーザー名か、パスワードがちゃいます"
